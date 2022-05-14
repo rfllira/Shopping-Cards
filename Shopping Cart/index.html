@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-jubr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>PROJETO SHOPPING CART</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +27,12 @@
       </div>
     </header>
     <section class="container">
-      <section class="items"></section>
+      <section class="items">
+        <div class="loading">Carregando...</div>
+      </section>
       <section class="cart">
         <ol class="cart__items"></ol>
+        <p id="total" class="total-price">0</p>
         <button class="empty-cart">Esvaziar carrinho</button>
       </section>
     </section>
