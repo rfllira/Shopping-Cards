@@ -1,1 +1,3 @@
-### Repositório de Projetos Desenvolvidos na Trybe
+### SHOPPING CART
+
+<img src="./demonstracao.gif">
