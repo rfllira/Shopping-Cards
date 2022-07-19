@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-// LISTA DE ITENS
 function createProductImageElement(imageSource) {
 	const img = document.createElement("img");
 	img.className = "item__image";
@@ -7,7 +5,7 @@ function createProductImageElement(imageSource) {
 	return img;
 }
 
-function createCustomElement(element, className, innerText, onclickCallback) {
+function createCustomElement(element, className, innerText, onclickCallback){
 	const e = document.createElement(element);
 	e.className = className;
 	e.innerText = innerText;
@@ -22,9 +20,10 @@ function storeCart() {
 		name: li.getAttribute("data-name"),
 		salePrice: li.getAttribute("data-salePrice"),
 	}));
+
 	saveCartItems(items);
 	const totalPrice = items.reduce((acc, produto) => acc + parseFloat(produto.salePrice), 0);
-	document.getElementById("total").innerText = totalPrice;
+	document.getElementById("total").innerText = `R$ ${totalPrice}`;
 }
 
 function cartItemClickListener(event) {

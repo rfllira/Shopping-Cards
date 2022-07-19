@@ -1,12 +1,20 @@
 * {
   box-sizing: border-box;
-  font-family: Epilogue, sans-serif;
+  font-family: sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: rgb(246, 246, 246);
+}
+
+.total-price {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: 24px;
 }
 
 .header {
@@ -138,6 +146,14 @@ body {
 .cart .cart__items {
   height: 500px;
   overflow-y: scroll;
+  background-color: rgb(235, 235, 235);
+}
+
+.cart__items {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 20px;
 }
 
 .empty-cart {
@@ -146,4 +162,11 @@ body {
   margin: 0 auto;
   border: 2px solid rgb(5, 52, 219);
   background-color: rgb(249, 249, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonEndprice {
+  margin-top: 25px;
 }
