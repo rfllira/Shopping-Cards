@@ -91,4 +91,3 @@ window.onload = () => {
 	const botaoEsvaziar = document.getElementsByClassName("empty-cart")[0];
 	botaoEsvaziar.addEventListener("click", emptyCart);
 };
-
